@@ -26,7 +26,7 @@ nav ul li {
     padding: 1rem;
 }
 
-nav ul li:hover:not(:last-child) {
+nav ul li:hover {
     background-color: whitesmoke;
     color: black;
 }
