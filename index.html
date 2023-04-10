@@ -13,18 +13,42 @@
 </head>
 
 <body>
-    <nav class="Barra-Navegacion">
+    <nav class="Barra-Navegacion" id="nav">
         <h1><span class="prueba">Curriculum:<span class="prueba2">~</span></span>$ ls</h1>
         <ul>
-            <li>Sobre_mi</li>
-            <li>Escolaridad</li>
-            <li>Experiecia_laboral</li>
-            <li>Habilidades</li>
-            <li>Portafolio</li>
+            <a href="#yo">
+                <li>Sobre_mi</li>
+            </a>
+            <a href="#Escuela">
+                <li>Escolaridad</li>
+            </a>
+            <a href="#Experiencia">
+                <li>Experiecia_laboral</li>
+            </a>
+            <a href="#habilidades">
+                <li>Habilidades</li>
+            </a>
+            <a href="#proyectos">
+                <li>Portafolio</li>
+            </a>
+            <li id="sun"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="44"
+                    height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="12" cy="12" r="4" />
+                    <path
+                        d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+                </svg></li>
+            <li id="moon"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="44"
+                    height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+                </svg></li>
         </ul>
     </nav>
-    <div class="sobre-mi">
-        <div>
+    <div class="sobre-mi" id="yo">
+        <div class="not-celular">
             <h2><span class="prueba">Curriculum:<span class="prueba2">~</span></span>$ nano Sobre_mi.txt</h2>
             <h3>Dario Carbjal Baldonado</h3>
 
@@ -35,11 +59,23 @@
                 servicio social que realicé en la Preparatoria No.10 y las 320 horas de prácticas profesionales que
                 llevé a cabo en el Centro Universitario de Ciencias Económico Administrativas.</P>
         </div>
-        <img src="media/img/Dario.jpg" alt="Foto de Dario" class="Img-dario">
+        <img src="media/img/Dario.jpg" alt="Foto de Dario" class="Img-dario not-celular">
+
+        <div class="celular">
+            <h2><span class="prueba">Curriculum:<span class="prueba2">~</span></span>$ nano Sobre_mi.txt</h2>
+            <h3>Dario Carbjal Baldonado</h3>
+            <img src="media/img/Dario.jpg" alt="Foto de Dario" class="Img-dario">
+            <P>Actualmente estoy estudiando ingeniería y desde joven he sentido una gran pasión por la tecnología. Por
+                eso, decidí asistir a una preparatoria técnica para adquirir conocimientos sobre cómo funcionan las
+                tecnologías que nos rodean. Durante este periodo, aprendí mucho sobre redes, ofimática y programación,
+                lo que reforzó aún más mis conocimientos. Además, pude aplicar lo aprendido durante las 480 horas de
+                servicio social que realicé en la Preparatoria No.10 y las 320 horas de prácticas profesionales que
+                llevé a cabo en el Centro Universitario de Ciencias Económico Administrativas.</P>
+        </div>
     </div>
 
     <div class="escolaridad">
-        <h2><span class="prueba">Curriculum:<span class="prueba2">~</span></span>$ cd Escolaridad</h2>
+        <h2 id="Escuela"><span class="prueba">Curriculum:<span class="prueba2">~</span></span>$ cd Escolaridad</h2>
         <div class="image-container">
             <img src="media/img/Preparatoria.jpeg" alt="Politecnico Matute Remus">
             <div class="preparatoria">
@@ -47,9 +83,12 @@
             </div>
         </div>
         <div class="texto-preparatoria">
-            <h4><span class="prueba">Curriculum\Escolaridad:<span class="prueba2">~</span></span>$ nano
+            <h4 class="not-celular"><span class="prueba">Curriculum\Escolaridad:<span class="prueba2">~</span></span>$
+                nano
                 Tecnologo_Profesional_en_Informatica.txt</h4>
-            <p>Del 2016 al 2020</p>
+            <h4 class="celular"><span class="prueba">Curriculum\Escolaridad:<span class="prueba2">~</span></span>$
+                Tecnologo Profesional en Informatica</h4>
+            <p>(Del 2016 al 2020)</p>
             <p>Cursé la carrera técnica de Tecnólogo Profesional en Informática, donde adquirí conocimientos básicos e
                 intermedios en áreas como la ofimática, las redes y la programación. En particular, aprendí sobre el
                 desarrollo de software y de aplicaciones web.</p>
@@ -62,10 +101,14 @@
             </div>
         </div>
         <div class="texto-preparatoria">
-            <h4><span class="prueba">Curriculum\Escolaridad:<span class="prueba2">~</span></span>$ nano
+            <h4 class="not-celular"><span class="prueba">Curriculum\Escolaridad:<span class="prueba2">~</span></span>$
+                nano
                 Ingenieria_en_Instrumentacion_Electronica_y_Nanosensores.txt
             </h4>
-            <p>Del 2021 a la actualiad</p>
+            <h4 class="celular"><span class="prueba">Curriculum\Escolaridad:<span class="prueba2">~</span></span>$
+                Ingenieria en Instrumentacion Electronica y Nanosensores
+            </h4>
+            <p>(Del 2021 a la actualiad)</p>
             <p>Actualmente estoy cursando la carrera de Instrumentación Electrónica y Nanosensores, donde he estado
                 adquiriendo conocimientos en electrónica y programación, tanto en el ámbito del software como de los
                 microcontroladores. Estos conocimientos han fortalecido mi lógica de programación y han permitido que
@@ -74,7 +117,8 @@
         </div>
     </div>
     <div class="escolaridad">
-        <h2><span class="prueba">Curriculum:<span class="prueba2">~</span></span>$ cd Experiecia_Laboral</h2>
+        <h2 id="Experiencia"><span class="prueba">Curriculum:<span class="prueba2">~</span></span>$ cd
+            Experiecia_Laboral</h2>
         <div class="image-container">
             <img src="media/img/Beliveo.jpeg" alt="Politecnico Matute Remus">
             <div class="preparatoria">
@@ -99,7 +143,7 @@
         <div class="texto-preparatoria">
             <h4><span class="prueba">Curriculum\Experiecia_Laboral:<span class="prueba2">~</span></span>$ nano
                 Tecnico_en_Audio_&_Video.txt</h4>
-            <p>NewTimes S.A de C.V. (Julio 2021 - Enero 2022)</p>
+            <p>NewTimes S.A de C.V. (Julio 2021 - Enero 2022).</p>
             <p>Realicé tareas de mantenimiento y reparación en equipos multimedia y llevé a cabo la instalación de
                 sistemas de CCTV en camiones de transporte de pasajeros. Durante estas actividades, pude desarrollar
                 habilidades en la identificación de problemas técnicos en sistemas multimedia y en la configuración de
@@ -113,9 +157,13 @@
             </div>
         </div>
         <div class="texto-preparatoria">
-            <h4><span class="prueba">Curriculum\Experiecia_Laboral:<span class="prueba2">~</span></span>$ nano
+            <h4 class="not-celular"><span class="prueba">Curriculum\Experiecia_Laboral:<span
+                        class="prueba2">~</span></span>$ nano
                 Diagnostic_Technician_I.txt</h4>
-            <p>Plexus S.A de C.V. (Septiembre 2022 - Abril 2023)</p>
+            <h4 class="celular"><span class="prueba">Curriculum Experiecia_Laboral:<span
+                        class="prueba2">~</span></span>$
+                Diagnostic Technician I</h4>
+            <p>Plexus S.A de C.V. (Septiembre 2022 - Abril 2023).</p>
             <p>Durante este periodo, ejercí como técnico de diagnóstico, llevando a cabo tareas de prueba, diagnóstico y
                 reparación de unidades médicas. Para facilitar el proceso, utilicé distintos instrumentos electrónicos y
                 aplicaciones especializadas en la identificación de problemas en estos equipos. Gracias a estas
@@ -125,7 +173,7 @@
         </div>
     </div>
     <div class="escolaridad">
-        <h2><span class="prueba">Curriculum:<span class="prueba2">~</span></span>$ cd Habilidades</h2>
+        <h2 id="habilidades"><span class="prueba">Curriculum:<span class="prueba2">~</span></span>$ cd Habilidades</h2>
         <div class="habilidades">
             <div class="habilidad">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-devices-pc" width="44"
@@ -165,7 +213,7 @@
                     <line x1="12" y1="5" x2="12" y2="19" />
                     <line x1="4" y1="12" x2="20" y2="12" />
                 </svg>
-                <p>Uso de paquetería office</p>
+                <p>Uso de paquetería office.</p>
             </div>
             <div class="habilidad">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-git" width="44"
@@ -188,7 +236,7 @@
                     <path
                         d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
                 </svg>
-                <p>Uso de Git y Github</p>
+                <p>Uso de Git y Github.</p>
             </div>
             <div class="habilidad">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sitemap" width="44"
@@ -201,7 +249,7 @@
                     <path d="M6 15v-1a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v1" />
                     <line x1="12" y1="9" x2="12" y2="12" />
                 </svg>
-                <p>Administración de Servidores</p>
+                <p>Administración de Servidores.</p>
             </div>
             <div class="habilidad">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5" width="44"
@@ -227,7 +275,7 @@
                     <path
                         d="M16.5 8h-2.5a0.5 .5 0 0 0 -.5 .5v3a0.5 .5 0 0 0 .5 .5h1.423a0.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" />
                 </svg>
-                <p>Desarrollo web</p>
+                <p>Desarrollo web.</p>
             </div>
             <div class="habilidad">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-python" width="44"
@@ -254,7 +302,7 @@
                         </g>
                     </g>
                 </svg>
-                <p>Conocimiento intermedio de Java y Python</p>
+                <p>Conocimiento intermedio de Java y Python.</p>
             </div>
             <div class="habilidad">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-terminal-2" width="44"
@@ -265,13 +313,13 @@
                     <line x1="13" y1="15" x2="16" y2="15" />
                     <rect x="3" y="4" width="18" height="16" rx="2" />
                 </svg>
-                <p>Uso de Linux</p>
+                <p>Uso de Linux.</p>
             </div>
         </div>
         <h4><span class="prueba">Curriculum\Habilidades:<span class="prueba2">~</span></span>$ cd ..</h4>
     </div>
     <div class="escolaridad">
-        <h2><span class="prueba">Curriculum:<span class="prueba2">~</span></span>$ cd Portafolio</h2>
+        <h2 id="proyectos"><span class="prueba">Curriculum:<span class="prueba2">~</span></span>$ cd Portafolio</h2>
         <div class="proyectos">
             <div class="proyecto">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-apple-arcade"
@@ -364,7 +412,7 @@
     <footer class="foot">
         <h3>Contactame</h3>
         <div class="contacto">
-            <a href="https://wa.me/523323606654">
+            <a id="whatsapp" href="https://wa.me/523323606654">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="44"
                     height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
                     stroke-linecap="round" stroke-linejoin="round">
