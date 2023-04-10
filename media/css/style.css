@@ -1,15 +1,38 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto Mono', monospace;
     background-color: black;
     color: white;
 }
 
+.celular {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .not-celular {
+        display: none;
+    }
+
+    .celular {
+        display: block;
+    }
+}
+
 /* ----- Barra de navegacion ----- */
+
 .Barra-Navegacion {
     display: grid;
     grid-template-columns: 1fr 3fr;
     border-bottom: 0.2rem solid;
     margin-bottom: 3rem;
+}
+
+.Barra-Navegacion .menu {
+    display: none;
 }
 
 nav ul {
@@ -20,17 +43,40 @@ nav ul {
     margin: 0;
 }
 
+nav ul a {
+    color: white;
+    text-decoration: none;
+}
+
 nav ul li {
     cursor: pointer;
     padding: 1 0.5rem;
     padding: 1rem;
 }
 
-nav ul li:hover {
-    background-color: whitesmoke;
+nav ul a:hover:not(:last-child) {
     color: black;
+    background-color: whitesmoke;
 }
 
+nav ul #sun {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .Barra-Navegacion {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Barra-Navegacion ul {
+        padding: 0;
+        display: block;
+        flex-direction: column;
+    }
+}
 
 /* ----- Seccion Sobre mi -----*/
 .sobre-mi {
@@ -49,8 +95,25 @@ nav ul li:hover {
 .sobre-mi img {
     width: 75%;
     height: 75%;
-
     object-fit: scale-down;
+}
+
+.sobre-mi .celular {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .sobre-mi .not-celular {
+        display: none;
+    }
+
+    .sobre-mi .celular {
+        display: block;
+    }
+
+    .sobre-mi .celular img {
+        max-height: 320px;
+    }
 }
 
 /* ----- Escolaridad -----*/
@@ -112,12 +175,14 @@ nav ul li:hover {
     font-size: 1.5rem;
 }
 
+/* ----- Habilidades ----- */
 .habilidades {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
     margin: 0 20%;
 }
+
 
 .escolaridad h4 {
     font-size: 1.5rem;
@@ -131,6 +196,21 @@ nav ul li:hover {
     grid-gap: 2.5rem;
 }
 
+@media (max-width: 768px) {
+    .proyectos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .proyectos {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .proyecto {
     padding: 2rem;
     margin: 0 auto;
@@ -142,7 +222,7 @@ nav ul li:hover {
     transition-duration: 0.5s;
 }
 
-.proyecto a{
+.proyecto a {
     color: #551a8b;
     text-decoration: none;
     font-style: italic;
@@ -154,27 +234,39 @@ nav ul li:hover {
     -webkit-box-shadow: 4px 6px 30px 16px rgba(255, 255, 255, 0.31);
     -moz-box-shadow: 4px 6px 30px 16px rgba(255, 255, 255, 0.31);
     box-shadow: 4px 6px 30px 16px rgba(255, 255, 255, 0.31);
-    
+
 }
 
-.foot{
+.foot {
     padding: 1rem;
     border-top: 0.2rem solid whitesmoke;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
-.foot .contacto{
+.foot .contacto {
     cursor: pointer;
     display: flex;
     justify-content: space-around;
 }
 
-.foot .contacto a{
+.foot .contacto a {
     text-decoration: none;
     color: white;
 }
 
-.foot .contacto p{
+.foot .contacto p {
     margin: 0;
+}
+
+@media (max-width: 768px) {
+    .foot {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foot .contacto {
+        display: flex;
+        flex-direction: column;
+    }
 }
