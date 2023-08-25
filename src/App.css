@@ -220,6 +220,7 @@ nav ul #sun {
 }
 
 .foot {
+  margin-top: 50px;
   padding: 1rem;
   border-top: 0.2rem solid whitesmoke;
   display: grid;
