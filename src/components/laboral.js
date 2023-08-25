@@ -8,7 +8,7 @@ function Laboral() {
     const referenceArray = [0, 1, 2];
     return (
         <div className="escolaridad">
-            <h2 id="Escuela"><span class="greenHighlight">Curriculum:<span class="blueHighlight">~</span></span>$ cd Experiecia_Laboral</h2>
+            <h2 id="Escuela"><span class="greenHighlight">Curriculum:<span class="blueHighlight">~</span></span>$ Experiecia_Laboral</h2>
             {referenceArray.map((element) =>
                 <>
                     <div class="image-container">
@@ -17,7 +17,7 @@ function Laboral() {
                             <h3>{contenido.trabajo.trabajo[element]}</h3>
                         </div>
                     </div><div class="texto-preparatoria">
-                        <h4 class="celular"><span class="greenHighlight">Curriculum\Escolaridad:<span class="blueHighlight">~</span></span>$
+                        <h4 class="celular"><span class="greenHighlight">Curriculum\Laboral:<span class="blueHighlight">~</span></span>$
                             {contenido.trabajo.puesto[element]}</h4>
                         <p>{contenido.trabajo.fecha[element]}</p>
                         <p>{contenido.trabajo.descripcion[element]}</p>

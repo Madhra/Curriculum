@@ -4,7 +4,7 @@ import Escolaridad from './components/escolaridad';
 import NavBar from './components/nav-bar';
 import SobreMi from './components/sobre-mi';
 import Habilidades from './components/habilidades';
-
+import Portafolio from "./components/portafolio";
 function App() {
   return (
     <div className="App">
@@ -13,6 +13,7 @@ function App() {
       <Escolaridad />
       <Laboral />
       <Habilidades />
+        <Portafolio />
     </div>
   );
 }

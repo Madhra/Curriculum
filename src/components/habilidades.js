@@ -16,13 +16,12 @@ function Habilidades() {
 
     return (
         <div className="escolaridad">
-            <h2 id="habilidades"><span class="greenHighlight">Curriculum:<span class="blueHighlight">~</span></span>$ cd Habilidades</h2>
+            <h2 id="habilidades"><span class="greenHighlight">Curriculum:<span class="blueHighlight">~</span></span>$ Habilidades</h2>
             <div className="habilidades">
                 {habilityArray.map((element, index) => {
                     return (
                         <div className="habilidad">
                             {svgs[index]}
-                            
                             <p>{element}</p>
                         </div>
                     )
